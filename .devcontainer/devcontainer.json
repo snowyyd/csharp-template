@@ -24,7 +24,7 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"ms-dotnettools.csdevkit",
+				"ms-dotnettools.csharp",
 				"EditorConfig.EditorConfig"
 			]
 		}
