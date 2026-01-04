@@ -13,6 +13,7 @@
 		<Nullable>enable</Nullable>
 		<WarningsAsErrors>nullable</WarningsAsErrors>
 		<ImplicitUsings>enable</ImplicitUsings>
+		<!-- <AllowUnsafeBlocks>true</AllowUnsafeBlocks> -->
 
 		<!-- Globalization -->
 		<InvariantGlobalization>true</InvariantGlobalization>

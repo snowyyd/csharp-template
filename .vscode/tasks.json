@@ -12,11 +12,21 @@
 				"Debug"
 			],
 			"default": "Debug"
+		},
+		{
+			"id": "publishConfig",
+			"type": "pickString",
+			"description": "Select a publish configuration",
+			"options": [
+				"ReleaseAOT",
+				"DebugAOT"
+			],
+			"default": "DebugAOT"
 		}
 	],
 	"tasks": [
 		{
-			"label": "Build",
+			"label": "$(build) Build Project: Template",
 			"command": "dotnet",
 			"type": "shell",
 			"args": [
@@ -28,7 +38,30 @@
 			"presentation": {
 				// "reveal": "silent"
 			},
-			"problemMatcher": "$msCompile"
+			"problemMatcher": "$msCompile",
+			"options": {
+				"cwd": "${workspaceFolder}/Template"
+			}
+		},
+		{
+			"label": "$(tools) Publish Project: Template (NativeAOT)",
+			"command": "dotnet",
+			"type": "shell",
+			"args": [
+				"publish",
+				"-c",
+				"${input:publishConfig}",
+				"-r",
+				"linux-x64",
+			],
+			"group": "build",
+			"presentation": {
+				// "reveal": "silent"
+			},
+			"problemMatcher": "$msCompile",
+			"options": {
+				"cwd": "${workspaceFolder}/Template"
+			}
 		}
 	]
 }
