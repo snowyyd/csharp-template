@@ -58,7 +58,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Snowyyd.AnalyzerConfig" Version="1.0.1" />
+		<PackageReference Include="Snowyyd.AnalyzerConfig" Version="1.0.2" />
 	</ItemGroup>
 
 </Project>
