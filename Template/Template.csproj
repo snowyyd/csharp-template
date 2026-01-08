@@ -19,6 +19,8 @@
 		<InvariantGlobalization>true</InvariantGlobalization>
 
 		<!-- QOL -->
+		<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+		<EnableNETAnalyzers>true</EnableNETAnalyzers>
 		<Deterministic>true</Deterministic>
 		<PathMap>$(MSBuildProjectDirectory)=.</PathMap>
 
