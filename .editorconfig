@@ -100,9 +100,12 @@ dotnet_naming_rule.private_fields_should_be_underscore_camel.style = underscore_
 dotnet_naming_rule.private_fields_should_be_underscore_camel.severity = error
 
 # Static fields
-dotnet_naming_rule.static_fields_should_be_s_camel_case.symbols = static_fields
-dotnet_naming_rule.static_fields_should_be_s_camel_case.style = pascal_calse # static_camel_case
-dotnet_naming_rule.static_fields_should_be_s_camel_case.severity = error
+# dotnet_naming_rule.static_fields_should_be_s_camel_case.symbols = static_fields
+# dotnet_naming_rule.static_fields_should_be_s_camel_case.style = static_camel_case
+# dotnet_naming_rule.static_fields_should_be_s_camel_case.severity = error
+dotnet_naming_rule.static_fields_should_be_pascal_case.symbols = static_fields
+dotnet_naming_rule.static_fields_should_be_pascal_case.style = pascal_case
+dotnet_naming_rule.static_fields_should_be_pascal_case.severity = error
 
 # Thread Static fields
 # dotnet_naming_rule.thread_static_fields_should_be_t_camel_case.symbols = thread_static_fields
