@@ -1,4 +1,5 @@
 {
+	// "dotnet.diagnostics.reportInformationAsHint": false,
 	"[csharp]": {
 		"files.insertFinalNewline": true,
 	},

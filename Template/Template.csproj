@@ -52,7 +52,11 @@
 		<IlcDisableReflection>false</IlcDisableReflection>
 
 		<EventSourceSupport>false</EventSourceSupport>
-    	<StackTraceSupport>false</StackTraceSupport>
+		<StackTraceSupport>false</StackTraceSupport>
 	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Snowyyd.AnalyzerConfig" Version="1.0.0" />
+	</ItemGroup>
 
 </Project>
