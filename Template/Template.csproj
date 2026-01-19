@@ -1,12 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-
 		<!-- Project -->
 		<OutputType>Exe</OutputType>
 		<TargetFramework>net10.0</TargetFramework>
 		<!-- <RootNamespace>Template</RootNamespace> -->
-		<Configurations>Debug;Release;DebugAOT;ReleaseAOT</Configurations>
+		<Configurations>Debug;Release;RelSelfContained;DebugAOT;ReleaseAOT</Configurations>
 
 		<!-- Lang features -->
 		<LangVersion>latest</LangVersion>
@@ -23,10 +22,20 @@
 		<EnableNETAnalyzers>true</EnableNETAnalyzers>
 		<Deterministic>true</Deterministic>
 		<PathMap>$(MSBuildProjectDirectory)=.</PathMap>
+		<EnableSourceLink>false</EnableSourceLink>
+		<DebugType>Portable</DebugType>
 
 		<!-- Misc -->
 		<ErrorReport>none</ErrorReport>
+	</PropertyGroup>
 
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelSelfContained|AnyCPU'">
+		<Optimize>true</Optimize>
+		<SelfContained>true</SelfContained>
+		<PublishSingleFile>true</PublishSingleFile>
+		<PublishTrimmed>false</PublishTrimmed>
+		<EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+		<!-- <IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract> -->
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugAOT|AnyCPU'">
@@ -40,7 +49,6 @@
 		<IlcDisableReflection>false</IlcDisableReflection>
 
 		<DebuggerSupport>true</DebuggerSupport>
-
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseAOT|AnyCPU'">
@@ -58,7 +66,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Snowyyd.AnalyzerConfig" Version="1.0.2" />
+		<PackageReference Include="Snowyyd.AnalyzerConfig" Version="1.0.3" />
 	</ItemGroup>
 
 </Project>
