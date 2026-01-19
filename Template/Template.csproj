@@ -22,6 +22,7 @@
 		<EnableNETAnalyzers>true</EnableNETAnalyzers>
 		<Deterministic>true</Deterministic>
 		<PathMap>$(MSBuildProjectDirectory)=.</PathMap>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<EnableSourceLink>false</EnableSourceLink>
 		<DebugType>Portable</DebugType>
 
