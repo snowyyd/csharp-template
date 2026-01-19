@@ -18,13 +18,15 @@
 		<InvariantGlobalization>true</InvariantGlobalization>
 
 		<!-- QOL -->
-		<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
-		<EnableNETAnalyzers>true</EnableNETAnalyzers>
 		<Deterministic>true</Deterministic>
 		<PathMap>$(MSBuildProjectDirectory)=.</PathMap>
-		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<EnableSourceLink>false</EnableSourceLink>
 		<DebugType>Portable</DebugType>
+
+		<!-- Analyzers -->
+		<EnableNETAnalyzers>true</EnableNETAnalyzers>
+		<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 
 		<!-- Misc -->
 		<ErrorReport>none</ErrorReport>
