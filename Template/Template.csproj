@@ -14,6 +14,13 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<!-- <AllowUnsafeBlocks>true</AllowUnsafeBlocks> -->
 
+		<!-- Publish -->
+		<PublishSingleFile>true</PublishSingleFile>
+		<PublishTrimmed>false</PublishTrimmed>
+		<!-- <IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract> -->
+		<!-- <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract> -->
+		<EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+
 		<!-- Globalization -->
 		<InvariantGlobalization>true</InvariantGlobalization>
 
@@ -35,10 +42,7 @@
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelSelfContained|AnyCPU'">
 		<Optimize>true</Optimize>
 		<SelfContained>true</SelfContained>
-		<PublishSingleFile>true</PublishSingleFile>
-		<PublishTrimmed>false</PublishTrimmed>
-		<EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
-		<!-- <IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract> -->
+		<DebugType>None</DebugType>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugAOT|AnyCPU'">
@@ -69,7 +73,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Snowyyd.AnalyzerConfig" Version="1.0.4" />
+		<PackageReference Include="Snowyyd.AnalyzerConfig" Version="1.0.5" />
 	</ItemGroup>
 
 </Project>
