@@ -7,20 +7,3 @@ insert_final_newline = true
 indent_style = tab
 indent_size = 4
 trim_trailing_whitespace = true
-
-[*.cs]
-# --------------------------------
-# Roslynator
-# --------------------------------
-# dotnet_analyzer_diagnostic.category-roslynator.severity = none
-
-# dotnet_diagnostic.RCS1110.severity = none # Declare type inside namespace
-dotnet_diagnostic.RCS1003.severity = none # Add braces to if-else (when expression spans over multiple lines)
-dotnet_diagnostic.RCS1124.severity = none # Inline local variable
-dotnet_diagnostic.RCS1161.severity = none # Enum should declare explicit values
-dotnet_diagnostic.RCS1181.severity = none # Convert comment to documentation comment
-dotnet_diagnostic.RCS1213.severity = none # Remove unused member declaration
-dotnet_diagnostic.RCS1163.severity = none # Unused parameter (same as IDE0060)
-
-dotnet_diagnostic.RCS1260.severity = error # Add/remove trailing comm
-roslynator_trailing_comma_style = omit_when_single_line

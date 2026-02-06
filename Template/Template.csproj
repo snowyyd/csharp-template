@@ -73,11 +73,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Roslynator.Analyzers" Version="4.15.0">
-		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-		  <PrivateAssets>all</PrivateAssets>
-		</PackageReference>
-		<PackageReference Include="Snowyyd.AnalyzerConfig" Version="1.0.7" />
+		<PackageReference Include="Snowyyd.AnalyzerConfig" Version="2.0.0" />
 	</ItemGroup>
 
 </Project>
