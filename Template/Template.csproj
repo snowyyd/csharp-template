@@ -73,7 +73,10 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Snowyyd.AnalyzerConfig" Version="2.0.0" />
+		<PackageReference Include="Snowyyd.AnalyzerConfig" Version="2.0.1">
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
 	</ItemGroup>
 
 </Project>
