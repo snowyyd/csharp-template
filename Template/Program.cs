@@ -1,4 +1,4 @@
-﻿namespace Template;
+namespace Template;
 
 internal static class Program
 {

@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<!-- Project -->
@@ -73,7 +73,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Snowyyd.AnalyzerConfig" Version="2.0.1">
+		<PackageReference Include="Snowyyd.AnalyzerConfig" Version="3.0.0">
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>
