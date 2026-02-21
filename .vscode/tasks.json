@@ -26,7 +26,7 @@
 	],
 	"tasks": [
 		{
-			"label": "$(build) Build Project: Template",
+			"label": "$(build) Build Project: MyTemplate",
 			"command": "dotnet",
 			"type": "shell",
 			"args": [
@@ -40,11 +40,11 @@
 			},
 			"problemMatcher": "$msCompile",
 			"options": {
-				"cwd": "${workspaceFolder}/Template"
+				"cwd": "${workspaceFolder}/MyTemplate"
 			}
 		},
 		{
-			"label": "$(tools) Publish Project: Template (NativeAOT)",
+			"label": "$(tools) Publish Project: MyTemplate (NativeAOT)",
 			"command": "dotnet",
 			"type": "shell",
 			"args": [
@@ -60,7 +60,7 @@
 			},
 			"problemMatcher": "$msCompile",
 			"options": {
-				"cwd": "${workspaceFolder}/Template"
+				"cwd": "${workspaceFolder}/MyTemplate"
 			}
 		}
 	]

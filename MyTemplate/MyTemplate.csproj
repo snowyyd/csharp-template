@@ -4,7 +4,7 @@
 		<!-- Project -->
 		<OutputType>Exe</OutputType>
 		<TargetFramework>net10.0</TargetFramework>
-		<!-- <RootNamespace>Template</RootNamespace> -->
+		<!-- <RootNamespace>MyTemplate</RootNamespace> -->
 		<Configurations>Debug;Release;RelSelfContained;DebugAOT;ReleaseAOT</Configurations>
 
 		<!-- Lang features -->
