@@ -11,7 +11,7 @@
 				"Release",
 				"Debug"
 			],
-			"default": "Debug"
+			"default": "Release"
 		},
 		{
 			"id": "publishConfig",
@@ -21,7 +21,7 @@
 				"ReleaseAOT",
 				"DebugAOT"
 			],
-			"default": "DebugAOT"
+			"default": "ReleaseAOT"
 		}
 	],
 	"tasks": [
