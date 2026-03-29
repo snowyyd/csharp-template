@@ -74,7 +74,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.3" />
-		<PackageReference Include="Snowyyd.AnalyzerConfig" Version="3.0.0">
+		<PackageReference Include="Snowyyd.AnalyzerConfig" Version="3.0.1">
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>
