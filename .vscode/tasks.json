@@ -13,16 +13,6 @@
       ],
       "default": "Release"
     },
-    {
-      "id": "publishConfig",
-      "type": "pickString",
-      "description": "Select a publish configuration",
-      "options": [
-        "ReleaseAOT",
-        "DebugAOT"
-      ],
-      "default": "ReleaseAOT"
-    }
   ],
   "tasks": [
     {
@@ -44,13 +34,13 @@
       }
     },
     {
-      "label": "$(tools) Publish Project: MyTemplate (NativeAOT)",
+      "label": "$(tools) Publish Project: MyTemplate",
       "command": "dotnet",
       "type": "shell",
       "args": [
         "publish",
         "-c",
-        "${input:publishConfig}",
+        "${input:buildConfig}",
         "-r",
         "linux-x64",
       ],
